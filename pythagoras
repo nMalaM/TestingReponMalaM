@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>  // for sqrt and pow
+
+using namespace std;
+
+double calculateHypotenuse(double a, double b) {
+    return sqrt(pow(a, 2) + pow(b, 2));
+}
+
+int main() {
+    double sideA, sideB;
+
+    cout << "Enter side A: ";
+    cin >> sideA;
+
+    cout << "Enter side B: ";
+    cin >> sideB;
+
+    double hypotenuse = calculateHypotenuse(sideA, sideB);
+
+    cout << "The hypotenuse is: " << hypotenuse << endl;
+
+    return 0;
+}
