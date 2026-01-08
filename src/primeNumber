@@ -1,0 +1,35 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("=== Prime Number Checker ===");
+
+        Console.Write("Enter a number: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        if (IsPrime(num))
+        {
+            Console.WriteLine(num + " is a PRIME number.");
+        }
+        else
+        {
+            Console.WriteLine(num + " is NOT a prime number.");
+        }
+    }
+
+    static bool IsPrime(int number)
+    {
+        if (number <= 1)
+            return false;
+
+        for (int i = 2; i <= Math.Sqrt(number); i++)
+        {
+            if (number % i == 0)
+                return false;
+        }
+
+        return true;
+    }
+}
