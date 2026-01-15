@@ -1,2 +1,2 @@
 # TestingReponMalaM
-Repository to testing
+Repository to testing. Contains a simple phytagoras formulas
